@@ -10,9 +10,6 @@ func aboutCommonInterfaces() {
 		out := new(bytes.Buffer)
 
 		/*
-		   Your code goes here.
-		   Hint, use these resources:
-
 		   $ godoc -http=:8080
 		   $ open http://localhost:8080/pkg/io/
 		   $ open http://localhost:8080/pkg/bytes/
