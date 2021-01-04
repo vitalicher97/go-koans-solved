@@ -12,7 +12,7 @@ func aboutBasics() {
 
 	assert(5%2 == 1)
 	assert(5*2 == 10)
-	assert(5^2 == 25)
+	assert(5^2 == 7)
 
 	var x int
 	assert(x == 0) // zero values are valued in Go

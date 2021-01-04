@@ -13,8 +13,8 @@ func aboutStrings() {
 	assert("smith"[2:4] == "it")  // or neither
 	assert("smith"[:] == "smith") // or both
 
-	assert("smith" == "smith") // they can be compared directly
-	assert("smith" < "smith")  // i suppose maybe this could be useful.. someday
+	assert("smith" == "smith")     // they can be compared directly
+	assert("smith" < "smithsmith") // i suppose maybe this could be useful.. someday
 
 	bytes := []byte{'a', 'b', 'c'}
 	assert(string(bytes) == "abc") // strings can be created from byte-slices
@@ -24,7 +24,7 @@ func aboutStrings() {
 
 	assert(fmt.Sprintf("hello %s", "world") == "hello world")         // our old friend sprintf returns
 	assert(fmt.Sprintf("hello \"%s\"", "world") == "hello \"world\"") // quoting is familiar
-	assert(fmt.Sprintf("hello %q", "world") == "world")               // although it can be done more easily
+	assert(fmt.Sprintf("hello %q", "world") == "hello \"world\"")     // although it can be done more easily
 
 	assert(fmt.Sprintf("your balance: %d and %0.2f", 3, 4.5589) == "your balance: 3 and 4.56") // "the root of all evil" is actually a misquotation, by the way
 }
